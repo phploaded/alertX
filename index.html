@@ -1,0 +1,193 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8" />
+<title>AlertX Documentation</title>
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1.0, user-scalable=0" />
+<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+<script type="text/javascript" src="js/jquery-3.6.0.min.js"></script>
+<script type="text/javascript" src="js/alertx.js"></script>
+<script type="text/javascript" src="js/demo.js"></script>
+<link rel="stylesheet" media="screen" type="text/css" href="css/demo.css">
+<link rel="stylesheet" media="screen" type="text/css" href="css/alertx.css">
+</head>
+<body class="body-">
+
+
+<div class="body-ctr">
+<div class="ctr">
+
+<h1>Demo &amp; Documentation for jQuery plugin alertX</h1>
+<p>alertX is a <b>jQuery powered alert, confirm and prompt replacement</b> with modern look and feel. It is completely free for you to use anywhere without the need of any kind of permission as it is released under MIT licence.</p>
+<p>To see the alertX in action right now, with all its default settings, you may <a href="javascript:void(0)" onclick="demo_alert_1()">click here</a>. You need only this line in your javascript:</p>
+<pre>$.alertX({<b>message</b>:&#39;This is the message.&#39;});</pre>
+
+
+<p>To change the title part, you can set <b>title</b> property. For preview <a href="javascript:void(0)" onclick="demo_alert_2()">click here</a>. Code sample:</p>
+<pre>
+$.alertX({
+<b>title</b>:&#39;My own title here&#39;,
+message:&#39;This is the message.&#39;
+});</pre>
+
+
+<p>There are many animations availiable, you may click any link to see it in action. Code sample:
+<pre>$.alertX({
+message:&#39;This alert opened with bounce animation. Same animation will apply in reverse mode when closing the alertX.&#39;,
+title:&#39;bounce animation example&#39;,
+<b>animation</b>:&#39;bounce&#39;
+});</pre>
+<ol>
+<li>alertX with <a href="javascript:void(0)" onclick="demo_alert_anim('none')">none animation</a> (DEFAULT)</li>
+<li>alertX with <a href="javascript:void(0)" onclick="demo_alert_anim('fade')">fade animation</a></li>
+<li>alertX with <a href="javascript:void(0)" onclick="demo_alert_anim('fall')">fall animation</a></li>
+<li>alertX with <a href="javascript:void(0)" onclick="demo_alert_anim('rise')">rise animation</a></li>
+<li>alertX with <a href="javascript:void(0)" onclick="demo_alert_anim('bounce')">bounce animation</a></li>
+<li>alertX with <a href="javascript:void(0)" onclick="demo_alert_anim('zoomin')">zoomin animation</a></li>
+<li>alertX with <a href="javascript:void(0)" onclick="demo_alert_anim('zoomout')">zoomout animation</a></li>
+<li>alertX with <a href="javascript:void(0)" onclick="demo_alert_anim('shake')">shake animation</a></li>
+</ol>
+</p>
+
+<p>There are many themes availiable, you may click any link to see a theme in action.
+<pre>$.alertX({
+message:&#39;This alert opened with glass theme. You may develop your own theme or download more from our website.&#39;,
+title:&#39;glass theme example&#39;,
+<b>theme</b>:&#39;glass&#39;
+});</pre>
+<ol>
+<li>alertX with <a href="javascript:void(0)" onclick="demo_alert_theme('simple')">simple theme</a> (DEFAULT)</li>
+<li>alertX with <a href="javascript:void(0)" onclick="demo_alert_theme('dark')">dark theme</a></li>
+<li>alertX with <a href="javascript:void(0)" onclick="demo_alert_theme('letter')">letter theme</a></li>
+<li>alertX with <a href="javascript:void(0)" onclick="demo_alert_theme('glass')">glass theme</a></li>
+<li>alertX with <a href="javascript:void(0)" onclick="demo_alert_theme('neon')">neon theme</a></li>
+</ol>
+</p>
+
+
+<p>There are some action icons availiable, you may click any link to see an icon preview.
+<pre>$.alertX({
+message:&#39;This alert opened with success icon. These may come handy to represent various situations.&#39;,
+title:&#39;success icon example&#39;,
+<b>icon</b>:&#39;success&#39;
+});</pre>
+<ol>
+<li>alertX with <a href="javascript:void(0)" onclick="demo_alert_icon('info')">info icon</a></li>
+<li>alertX with <a href="javascript:void(0)" onclick="demo_alert_icon('danger')">danger icon</a></li>
+<li>alertX with <a href="javascript:void(0)" onclick="demo_alert_icon('success')">success icon</a></li>
+<li>alertX with <a href="javascript:void(0)" onclick="demo_alert_icon('warning')">warning icon</a></li>
+<li>alertX with <a href="javascript:void(0)" onclick="demo_alert_icon('question')">question icon</a></li>
+</ol>
+</p>
+
+
+<p>There are some color classes that you may find useful with buttons, backdrop and title color. Button HTML code sample:
+<pre>&lt;a href=&quot;#&quot; class=&quot;alertx-btn <b>red</b>&quot;&gt;Red Button&lt;/a&gt;</pre>
+ Click any button below for preview. Code sample is below buttons:<br><br>
+<a href="javascript:void(0)" onclick="demo_alert_color('red')" class="alertx-btn red">red</a>
+<a href="javascript:void(0)" onclick="demo_alert_color('green')" class="alertx-btn green">green</a>
+<a href="javascript:void(0)" onclick="demo_alert_color('teal')" class="alertx-btn teal">teal</a>
+<a href="javascript:void(0)" onclick="demo_alert_color('pink')" class="alertx-btn pink">pink</a>
+<a href="javascript:void(0)" onclick="demo_alert_color('brown')" class="alertx-btn brown">brown</a>
+<a href="javascript:void(0)" onclick="demo_alert_color('blue')" class="alertx-btn blue">blue</a>
+<a href="javascript:void(0)" onclick="demo_alert_color('purple')" class="alertx-btn purple">purple</a>
+<a href="javascript:void(0)" onclick="demo_alert_color('gold')" class="alertx-btn gold">gold</a>
+<a href="javascript:void(0)" onclick="demo_alert_color('orange')" class="alertx-btn orange">orange</a>
+<pre>$.alertX({
+message:&#39;This alertX have teal colored title and backdrop color.&#39;,
+title:&#39;teal color class example&#39;,
+<b>titleClass</b>:&#39;teal&#39;,
+<b>bgClass</b>:&#39;teal&#39;
+});</pre>
+</p>
+
+<p>Backdrop have 3 properties that can be true or false. Code sample:
+<pre>$.alertX({
+message:&#39;This is the message.&#39;,
+title:&#39;Backdrop options example&#39;,
+<b>bg</b>:true,
+<b>bgpic</b>:false,
+<b>bgblur</b>:true
+});</pre>
+
+<ol>
+<li><a href="javascript:void(0)" onclick="demo_alert_bg(true, false, true)">Disable only image on backdrop</a></li>
+<li><a href="javascript:void(0)" onclick="demo_alert_bg(true, true, false)">Disable only blur effect on backdrop</a></li>
+<li><a href="javascript:void(0)" onclick="demo_alert_bg(false, true, true)">Disable backdrop, but keep blur effect</a></li>
+<li><a href="javascript:void(0)" onclick="demo_alert_bg(false, true, false)">Disable backdrop and blur effect</a></li>
+</ol>
+</p>
+
+
+<p>Confirm dialogs can also be made using this plugin. <a href="javascript:void(0)" onclick="demo_confirm('Are you sure?')">See demo</a></p>
+<pre>$.alertX({
+message:&#39;Are you sure?&#39;,
+title:&#39;Please confirm...&#39;,
+<b>type</b>:&#39;confirm&#39;,
+<b>confirmed</b>:function(){ $.alertX(&#39;You confirmed it!&#39;); },
+<b>cancelled</b>:function(){ $.alertX(&#39;You cancelled it!&#39;); }
+});</pre>
+
+
+<p>You can make use of Xalign and Yalign options to control the position of alertX. Code sample:
+<pre>$.alertX({
+message:&#39;This box should be aligned as per the link you had clicked.&#39;,
+title:&#39;Alignment preview&#39;,
+<b>Yalign</b>:&#39;start&#39;,
+<b>Xalign</b>:&#39;end&#39;
+});</pre>
+
+<br><br>Values can be start, center or end on both options. You can test preview below:
+<div class="demo-list-33">
+<ul>
+<li><a href="javascript:void(0)" onclick="demo_position('start', 'start')">start start</a></li>
+<li><a href="javascript:void(0)" onclick="demo_position('start', 'center')">start center</a></li>
+<li><a href="javascript:void(0)" onclick="demo_position('start', 'end')">start end</a></li>
+</ul>
+<ul>
+<li><a href="javascript:void(0)" onclick="demo_position('center', 'start')">center start</a></li>
+<li><a href="javascript:void(0)" onclick="demo_position('center', 'center')">center center</a></li>
+<li><a href="javascript:void(0)" onclick="demo_position('center', 'end')">center end</a></li>
+</ul>
+<ul>
+<li><a href="javascript:void(0)" onclick="demo_position('end', 'start')">end start</a></li>
+<li><a href="javascript:void(0)" onclick="demo_position('end', 'center')">end center</a></li>
+<li><a href="javascript:void(0)" onclick="demo_position('end', 'end')">end end</a></li>
+</ul>
+</div>
+</p>
+
+<p>You can run multiple instances at once. <a href="javascript:void(0)" onclick="demo_multiple()">View demo here</a></p>
+
+<p>You can use it for notification also. You can also set timeout for it. <a href="javascript:void(0)" onclick="demo_notification()">View demo here</a>. Code sample:</p>
+<pre>$.alertX({
+message:&#39;This is a notification message. It disappears in 15 seconds.&#39;,
+Yalign:&#39;center&#39;,
+Xalign:&#39;center&#39;,
+theme:&#39;neon&#39;,
+<b>timeout</b>:15000,
+bgblur:false,
+<b>type</b>:&#39;notify&#39;
+});</pre>
+
+
+<p>Sometimes, you may need multiple action buttons OR want some information to be displayed in footer part of alertX. Code sample:
+<pre>
+$.alertX({
+message:&#39;Can you see my name in footer near button area?&#39;,
+title:&#39;Footer text example...&#39;,
+footer:&#39;Satish Kumar Sharma&#39;
+});
+</pre>
+
+<ul>
+<li><a href="javascript:void(0)" onclick="demo_footer_text()">text in footer</a></li>
+<li><a href="javascript:void(0)" onclick="demo_footer_btns()">HTML or buttons in footer</a></li>
+</ul>
+</p>
+
+</div>
+</div>
+
+</body>
+</html>
