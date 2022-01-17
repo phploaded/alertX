@@ -7,17 +7,17 @@
 
 alertX is a jQuery plugin to replace alert and confirm functions found in browsers with modern layout and extended options. These alerts can also be used as notifications with minor tweaks. These boxes look different in various browsers, offer almost no customization and have limited functionality. Hence alertX was very much needed to counter those problems. Various features :
 
--     It can replace alert, confirm and prompt boxes. Can also serve as notification widget.
--     Look and function same in all modern browsers.
--     Optionally Provides title to the alertX box.
--     Preloaded with many themes, colors and animations.
--     Highly customizable via jQuery options.
--     Offers extended functionality like HTML messages, autoclose after specified time, AJAX operations.
--     Multiple buttons for various actions can be included in footer.
--     Multiple boxes with different options and themes can be opened on same page.
--     Can display success, danger, warning, info and question icons with message to represent nature of message.
--     Can be aligned at various parts of screen.
--     It is a standalone product and released with MIT licence so that it is free for everyone and anything.
+- It can replace alert, confirm and prompt boxes. Can also serve as notification widget.
+- Look and function same in all modern browsers.
+- Optionally Provides title to the alertX box.
+- Preloaded with many themes, colors and animations.
+- Highly customizable via jQuery options.
+- Offers extended functionality like HTML messages, autoclose after specified time, AJAX operations.
+- Multiple buttons for various actions can be included in footer.
+- Multiple boxes with different options and themes can be opened on same page.
+- Can display success, danger, warning, info and question icons with message to represent nature of message.
+- Can be aligned at various parts of screen.
+- It is a standalone product and released with MIT licence so that it is free for everyone and anything.
 
  
 ## How to install OR use alertX plugin?
