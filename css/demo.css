@@ -30,8 +30,9 @@ box-shadow:0 0 4px #000;
 pre{
 border:1px solid silver;
 background-color:#ddd;
-padding:10px;
 overflow-x: auto;
+font-size:16px;
+padding:5px;
 }
 
 p{
@@ -63,3 +64,22 @@ display:block;
 
 a{text-decoration:none;}
 a:hover{text-decoration:underline;}
+
+.tbl{
+border-collapse:collapse;
+}
+
+.tbl tr > td{
+border:1px solid silver;
+padding:5px;
+vertical-align:top;
+}
+
+.tbl tr > th{
+border:1px solid silver;
+padding:10px 0;
+text-align:center;
+font:bold 16px arial, sans-serif;
+}
+
+.tbl tr:nth-child(even){background-color:#ddd;}

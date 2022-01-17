@@ -232,3 +232,8 @@ function demo_alert_color2(xcolor){
 $('.alertx-head').attr('class', 'alertx-head '+xcolor);
 $('.alertx-bg').attr('class', 'alertx-bg '+xcolor);
 }
+
+
+jQuery(document).ready(function($){
+hljs.highlightAll();
+});
